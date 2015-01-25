@@ -1,0 +1,9 @@
+.home_content_container {
+  @include centre("b");
+
+  .home_header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 200px;
+  }
+}

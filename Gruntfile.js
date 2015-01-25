@@ -11,6 +11,7 @@ module.exports = function(grunt) {
           cssDir: 'style/css',
           imagesDir: 'img',
           javascriptsDir: 'js',
+          fontsDir: 'style/fonts',
           outputStyle: 'compressed',
           watch: true
         }
