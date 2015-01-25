@@ -1,11 +1,5 @@
-# Empty Project
-This repository is to start quickly with a new project.
+# Portfolio
+This is my portfolio.
+It's not online yet but will be soon.
 
-To start:
-* Download repository
-* `cd path/to/repository`
-* `npm install`
-* `bower install`
-* `bower`
-
-Afer that you can just start developing.
+Come back later to check for a URL.
