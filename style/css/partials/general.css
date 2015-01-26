@@ -1,17 +1,19 @@
 /*
 Error: Undefined mixin 'box-sizing'.
-        on line 4 of /Users/johan/Sites/portfolio/style/scss/partials/general.scss, in `box-sizing'
-        from line 4 of /Users/johan/Sites/portfolio/style/scss/partials/general.scss
+        on line 10 of /Users/johan/Sites/portfolio/style/scss/partials/general.scss, in `box-sizing'
+        from line 10 of /Users/johan/Sites/portfolio/style/scss/partials/general.scss
 
-1: *,
-2: *:after,
-3: *:before {
-4:   @include box-sizing(border-box);
 5: }
+6: 
+7: *,
+8: *:after,
+9: *:before {
+10:   @include box-sizing(border-box);
+11: }
 
 Backtrace:
-/Users/johan/Sites/portfolio/style/scss/partials/general.scss:4:in `box-sizing'
-/Users/johan/Sites/portfolio/style/scss/partials/general.scss:4
+/Users/johan/Sites/portfolio/style/scss/partials/general.scss:10:in `box-sizing'
+/Users/johan/Sites/portfolio/style/scss/partials/general.scss:10
 /Users/johan/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
 /Users/johan/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:98:in `block in with_mixin'
 /Users/johan/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
@@ -64,4 +66,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'box-sizing'.\A         on line 4 of /Users/johan/Sites/portfolio/style/scss/partials/general.scss, in `box-sizing'\A         from line 4 of /Users/johan/Sites/portfolio/style/scss/partials/general.scss\A \A 1: *,\A 2: *:after,\A 3: *:before {\A 4:   @include box-sizing(border-box);\A 5: }"; }
+  content: "Error: Undefined mixin 'box-sizing'.\A         on line 10 of /Users/johan/Sites/portfolio/style/scss/partials/general.scss, in `box-sizing'\A         from line 10 of /Users/johan/Sites/portfolio/style/scss/partials/general.scss\A \A 5: }\A 6: \A 7: *,\A 8: *:after,\A 9: *:before {\A 10:   @include box-sizing(border-box);\A 11: }"; }
