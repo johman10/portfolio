@@ -1,7 +1,7 @@
 .home_content_container {
   @include centre("b");
-  width: 50%;
-  height: 235px;
+  width: 500px;
+  height: 287px;
 
   .home_header {
     @include centre("b");
@@ -14,11 +14,39 @@
   .home_paragraph {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 16px;
     text-align: justify;
     margin: 115px 0 0 8px;
     opacity: 0;
     @include animation("showParagraph" .5s linear 3s forwards);
+  }
+
+  .home_button_container {
+    @include centre("x");
+    width: 200px;
+    text-align: center;
+
+    .home_latest_link {
+      height: 50px;
+      width: 200px;
+      line-height: 50px;
+      border: solid 1px $black;
+      display: block;
+      color: $black;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 15px 0 5px 0;
+    }
+
+    .home_overview_link {
+      text-decoration: none;
+      color: $text-grey;
+      font-size: 14px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 

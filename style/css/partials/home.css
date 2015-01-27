@@ -5,8 +5,8 @@ Error: Undefined mixin 'centre'.
 
 1: .home_content_container {
 2:   @include centre("b");
-3:   width: 50%;
-4:   height: 235px;
+3:   width: 500px;
+4:   height: 287px;
 5: 
 6:   .home_header {
 7:     @include centre("b");
@@ -66,4 +66,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'centre'.\A         on line 2 of /Users/johan/Sites/portfolio/style/scss/partials/home.scss, in `centre'\A         from line 2 of /Users/johan/Sites/portfolio/style/scss/partials/home.scss\A \A 1: .home_content_container {\A 2:   @include centre(\"b\");\A 3:   width: 50%;\A 4:   height: 235px;\A 5: \A 6:   .home_header {\A 7:     @include centre(\"b\");"; }
+  content: "Error: Undefined mixin 'centre'.\A         on line 2 of /Users/johan/Sites/portfolio/style/scss/partials/home.scss, in `centre'\A         from line 2 of /Users/johan/Sites/portfolio/style/scss/partials/home.scss\A \A 1: .home_content_container {\A 2:   @include centre(\"b\");\A 3:   width: 500px;\A 4:   height: 287px;\A 5: \A 6:   .home_header {\A 7:     @include centre(\"b\");"; }
