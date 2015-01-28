@@ -1,7 +1,7 @@
 .home_content_container {
   @include centre("b");
   width: 500px;
-  height: 287px;
+  height: 295px;
 
   .home_header {
     @include centre("b");
@@ -16,7 +16,7 @@
     font-weight: 300;
     font-size: 16px;
     text-align: justify;
-    margin: 115px 0 0 8px;
+    margin: 165px 0 0 8px;
     opacity: 0;
     @include animation("showParagraph" .5s linear 3s forwards);
   }
@@ -30,9 +30,9 @@
       height: 50px;
       width: 200px;
       line-height: 50px;
-      border: solid 1px $black;
+      border: solid 1px $white;
       display: block;
-      color: $black;
+      color: $white;
       text-decoration: none;
       border-radius: 5px;
       margin: 15px 0 5px 0;
@@ -40,7 +40,7 @@
 
     .home_overview_link {
       text-decoration: none;
-      color: $text-grey;
+      color: $white;
       font-size: 14px;
 
       &:hover {
@@ -52,11 +52,12 @@
 
 @include keyframes("headerResize") {
   0%   {
-    font-size: 200px;
+    // font-size: 200px;
   }
   100% {
-    @include reset-centre("b");
-    font-size: 100px;
+    left: 50%;
+    top: 20%;
+    // font-size: 100px;
   }
 }
 
