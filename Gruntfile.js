@@ -7,6 +7,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.initConfig({
+    concurrent: {
+      watch: {
+        tasks: ['watch', 'compass'],
+        options: {
+            logConcurrentOutput: true
+        }
+      }
+    },
     compass: {
       dist: {
         options: {
@@ -16,7 +24,8 @@ module.exports = function(grunt) {
           imagesDir: 'img',
           javascriptsDir: 'js',
           fontsDir: 'style/fonts',
-          outputStyle: 'compressed'
+          outputStyle: 'compressed',
+          watch: true
         }
       }
     },
@@ -43,10 +52,10 @@ module.exports = function(grunt) {
       },
       css: {
         files: ['**/*.scss'],
-        tasks: ['compass', 'autoprefixer', 'modernizr'],
+        tasks: ['autoprefixer', 'modernizr'],
       }
     },
   });
 
-  // grunt.registerTask('default', ['compass', 'autoprefixer', 'modernizr']);
+  grunt.registerTask('default', 'concurrent');
 };
