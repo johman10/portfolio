@@ -1,14 +1,17 @@
 .home_content_container {
   @include centre("b");
   width: 500px;
-  height: 295px;
+  height: 260px;
 
   .home_header {
     @include centre("b");
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 200px;
-    @include animation("headerResize" 1s linear 2s forwards);
+
+    .cssanimations & {
+      @include animation("headerResize" 1s linear 2s forwards);
+    }
   }
 
   .home_paragraph {
@@ -18,7 +21,10 @@
     text-align: justify;
     margin: 165px 0 0 8px;
     opacity: 0;
-    @include animation("showParagraph" .5s linear 3s forwards);
+
+    .cssanimations & {
+      @include animation("showParagraph" .5s linear 3s forwards);
+    }
   }
 
   .home_button_container {
@@ -51,20 +57,13 @@
 }
 
 @include keyframes("headerResize") {
-  0%   {
-    // font-size: 200px;
-  }
   100% {
     left: 50%;
     top: 20%;
-    // font-size: 100px;
   }
 }
 
 @include keyframes("showParagraph") {
-  0%   {
-    opacity: 0;
-  }
   100% {
     opacity: 1;
   }
