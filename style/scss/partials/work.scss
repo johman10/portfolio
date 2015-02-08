@@ -5,7 +5,7 @@
   opacity: 0;
 
   .cssanimations & {
-    @include animation("workReplace" .5s linear 2.5s forwards);
+    @include animation("workReplace" 1s linear 2.5s forwards);
   }
 
   @include keyframes("workReplace") {
