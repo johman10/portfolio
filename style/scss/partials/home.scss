@@ -10,7 +10,14 @@
     font-size: 200px;
 
     .cssanimations & {
-      @include animation("headerResize" 1s linear 2s forwards);
+      @include animation("headerPlace" 1s linear 1.5s forwards);
+    }
+
+    @include keyframes("headerPlace") {
+      100% {
+        left: 50%;
+        top: 20%;
+      }
     }
   }
 
@@ -23,7 +30,13 @@
     opacity: 0;
 
     .cssanimations & {
-      @include animation("showParagraph" .5s linear 3s forwards);
+      @include animation("showParagraph" .5s linear 2.5s forwards);
+    }
+
+    @include keyframes("showParagraph") {
+      100% {
+        opacity: 1;
+      }
     }
   }
 
@@ -53,18 +66,5 @@
         text-decoration: underline;
       }
     }
-  }
-}
-
-@include keyframes("headerResize") {
-  100% {
-    left: 50%;
-    top: 20%;
-  }
-}
-
-@include keyframes("showParagraph") {
-  100% {
-    opacity: 1;
   }
 }

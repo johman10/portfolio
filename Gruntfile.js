@@ -25,7 +25,7 @@ module.exports = function(grunt) {
           javascriptsDir: 'js',
           fontsDir: 'style/fonts',
           outputStyle: 'compressed',
-          watch: true
+          // watch: true
         }
       }
     },
@@ -39,13 +39,10 @@ module.exports = function(grunt) {
       }
     },
     modernizr: {
-      dist: {
-        devFile: 'js/modules/modernizr.js',
-        outputFile: 'js/modules/build-modernizr.js',
-        // parseFiles: true,
-        "files" : {
-          "src": ['/style/css/main.css']
-        },
+      "dist": {
+        "devFile": 'js/modules/modernizr.js',
+        "outputFile": 'js/modules/build-modernizr.js',
+        "parseFiles": true
       }
     },
     watch: {
@@ -55,7 +52,7 @@ module.exports = function(grunt) {
       },
       css: {
         files: ['**/*.scss'],
-        tasks: ['autoprefixer', 'modernizr'],
+        tasks: ['modernizr', 'compass', 'autoprefixer'],
       }
     },
   });

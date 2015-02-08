@@ -1,0 +1,28 @@
+.work_content_container {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  opacity: 0;
+
+  .cssanimations & {
+    @include animation("workReplace" .5s linear 2.5s forwards);
+  }
+
+  @include keyframes("workReplace") {
+    0% {
+      bottom: -400px;
+      display: block;
+    }
+    100% {
+      bottom: -350px;
+      opacity: 1;
+    }
+  }
+
+  .project_block {
+    float: left;
+    background-color: $white;
+    width: 33.33%;
+    height: 200px;
+  }
+}

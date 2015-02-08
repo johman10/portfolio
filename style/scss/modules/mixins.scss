@@ -1,65 +1,22 @@
 @import "compass/css3/animation";
 
-@mixin box-sizing($box-model) {
-  -webkit-box-sizing: $box-model;
-     -moz-box-sizing: $box-model;
-          box-sizing: $box-model;
+@mixin box-sizing($box-model: "border-box") {
+  box-sizing: $box-model;
 }
 
 @mixin centre($axis: "b"){
   position:absolute;
   @if $axis == "y"{
       top:50%;
-      -webkit-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -o-transform: translateY(-50%);
       transform: translateY(-50%);
   }
   @if $axis == "x"{
       left:50%;
-      -webkit-transform: translateX(-50%);
-      -moz-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      -o-transform: translateX(-50%);
       transform: translateX(-50%);
   }
   @if $axis == "b"{
       top:50%;
       left:50%;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-  }
-}
-
-@mixin reset-centre($axis: "b"){
-  position:initial;
-  @if $axis == "y"{
-      top:0;
-      -webkit-transform: initial;
-      -moz-transform: initial;
-      -ms-transform: initial;
-      -o-transform: initial;
-      transform: initial;
-  }
-  @if $axis == "x"{
-      left:0;
-      -webkit-transform: initial;
-      -moz-transform: initial;
-      -ms-transform: initial;
-      -o-transform: initial;
-      transform: initial;
-  }
-  @if $axis == "b"{
-      top:0;
-      left:0;
-      -webkit-transform: initial;
-      -moz-transform: initial;
-      -ms-transform: initial;
-      -o-transform: initial;
-      transform: initial;
   }
 }
