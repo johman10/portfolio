@@ -1,8 +1,10 @@
 .work_content_container {
   width: 100%;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   opacity: 0;
+  height: 0;
+  overflow: hidden;
 
   .cssanimations & {
     @include animation("workReplace" 1s linear 2.5s forwards);
@@ -11,9 +13,9 @@
   @include keyframes("workReplace") {
     0% {
       bottom: -400px;
-      display: block;
     }
     100% {
+      height: auto;
       bottom: -350px;
       opacity: 1;
     }
