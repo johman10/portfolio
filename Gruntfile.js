@@ -42,7 +42,13 @@ module.exports = function(grunt) {
       "dist": {
         "devFile": 'js/modules/modernizr.js',
         "outputFile": 'js/modules/build-modernizr.js',
-        "parseFiles": true
+        "parseFiles": true,
+        "files" : {
+          "src": [
+            'js/**',
+            'style/css/**'
+          ]
+        },
       }
     },
     watch: {
