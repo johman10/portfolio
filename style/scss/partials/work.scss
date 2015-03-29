@@ -26,5 +26,26 @@
     background-color: $white;
     width: 33.33%;
     height: 200px;
+    background-repeat: no-repeat;
+  }
+
+  .justab {
+    background: image-url('justab/logo.png') $white no-repeat 50% 50%;
+  }
+
+  .lets_connect {
+    background: image-url('connect/logo.png') $white no-repeat 50% 50%;
+  }
+
+  .serve_72 {
+    background: image-url('serve/logo.png') no-repeat 50% 50%;
+  }
+
+  .shelter_ministries {
+    background: image-url('shelter/logo.png') no-repeat 50% 50%;
+  }
+
+  .beauty_unique {
+    background: image-url('beauty/logo.png') no-repeat 50% 50%;
   }
 }

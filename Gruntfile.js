@@ -25,6 +25,7 @@ module.exports = function(grunt) {
           javascriptsDir: 'js',
           fontsDir: 'style/fonts',
           outputStyle: 'compressed',
+          relativeAssets: true
           // watch: true
         }
       }
