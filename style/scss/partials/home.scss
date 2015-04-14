@@ -1,5 +1,6 @@
-.home_content_container {
+.home_container {
   @include centre("b");
+  position: fixed;
   width: 500px;
   height: 260px;
 

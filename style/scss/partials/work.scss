@@ -1,4 +1,4 @@
-.work_content_container {
+.content_container {
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -22,7 +22,7 @@
     }
   }
 
-  .work_content_inner {
+  .work_container {
     width: 750px;
     margin: 0 auto;
   }
@@ -63,6 +63,10 @@
       transform: translateY(-50%);
       opacity: 0;
       transition: opacity .3s ease;
+
+      h2 {
+        margin-bottom: 5px;
+      }
     }
 
     &:hover .work_hover_background,
