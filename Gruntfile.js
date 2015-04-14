@@ -7,14 +7,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.initConfig({
-    concurrent: {
-      watch: {
-        tasks: ['watch', 'compass'],
-        options: {
-            logConcurrentOutput: true
-        }
-      }
-    },
     compass: {
       dist: {
         options: {
@@ -54,15 +46,15 @@ module.exports = function(grunt) {
     },
     watch: {
       scripts: {
-        files: ['**/*.js'],
+        files: ['**/*.js', '!js/modules/build-modernizr.js'],
         tasks: ['modernizr'],
       },
       css: {
         files: ['**/*.scss'],
-        tasks: ['modernizr', 'compass', 'autoprefixer'],
+        tasks: ['compass', 'autoprefixer', 'modernizr'],
       }
     },
   });
 
-  grunt.registerTask('default', 'concurrent');
+  grunt.registerTask('default', 'watch');
 };

@@ -28,22 +28,46 @@
   }
 
   .project_block {
+    position: relative;
     float: left;
     width: 250px;
     height: 200px;
     background-repeat: no-repeat;
 
-    .hover_effect {
-      opacity: 0;
+    .work_link {
       display: block;
-      background-color: grey;
+      position: absolute;
+      left: 0;
+      top: 0;
       height: 100%;
       width: 100%;
-      transition: opacity .2s linear;
+      z-index: 100;
     }
 
-    &:hover .hover_effect {
-      opacity: .5;
+    .work_hover_background {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: $black;
+      opacity: 0;
+      transition: opacity .3s ease;
+    }
+
+    .work_hover_text {
+      position: relative;
+      width: 100%;
+      padding: 12.5%;
+      color: $white;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0;
+      transition: opacity .3s ease;
+    }
+
+    &:hover .work_hover_background,
+    &:hover .work_hover_text {
+      opacity: .8;
     }
   }
 
