@@ -8,16 +8,16 @@
   background-color: $white;
 
   .cssanimations & {
-    @include animation("workReplace" 1s linear 2.5s forwards);
+    @include animation("workReplace" 1s ease 2.5s forwards);
   }
 
   @include keyframes("workReplace") {
     0% {
-      bottom: -400px;
+      bottom: -442px;
     }
     100% {
       height: auto;
-      bottom: -350px;
+      bottom: -392px;
       opacity: 1;
     }
   }

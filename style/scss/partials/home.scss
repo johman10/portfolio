@@ -11,7 +11,7 @@
     font-size: 200px;
 
     .cssanimations & {
-      @include animation("headerPlace" 1s linear 1.5s forwards);
+      @include animation("headerPlace" 1s ease 1.5s forwards);
     }
 
     @include keyframes("headerPlace") {
@@ -31,7 +31,7 @@
     opacity: 0;
 
     .cssanimations & {
-      @include animation("showParagraph" .5s linear 2.5s forwards);
+      @include animation("showParagraph" .5s ease 2.5s forwards);
     }
 
     @include keyframes("showParagraph") {
