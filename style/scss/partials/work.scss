@@ -13,11 +13,11 @@
 
   @include keyframes("workReplace") {
     0% {
-      bottom: -442px;
+      bottom: -492px;
     }
     100% {
       height: auto;
-      bottom: -392px;
+      bottom: -442px;
       opacity: 1;
     }
   }
@@ -69,9 +69,12 @@
       }
     }
 
-    &:hover .work_hover_background,
+    &:hover .work_hover_background {
+      opacity: .6;
+    }
+
     &:hover .work_hover_text {
-      opacity: .8;
+      opacity: 1;
     }
   }
 

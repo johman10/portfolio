@@ -1,7 +1,45 @@
 .contact_container {
-  padding-top: 20px;
+  padding: 20px 0;
   width: 750px;
   margin: 0 auto;
   color: $black;
+  text-align: center;
+
+  .contact_icon {
+    height: 50px;
+    width: 50px;
+    background-size: 100% 100%;
+    opacity: .6;
+    display: inline-block;
+    margin: 0 20px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .email_icon {
+    background-image: image-url('contact/email.png');
+
+    .svg & {
+      background-image: image-url('contact/email.svg');
+    }
+  }
+
+  .github_icon {
+    background-image: image-url('contact/github.png');
+
+    .svg & {
+      background-image: image-url('contact/github.svg');
+    }
+  }
+
+  .twitter_icon {
+    background-image: image-url('contact/twitter.png');
+
+    .svg & {
+      background-image: image-url('contact/twitter.svg');
+    }
+  }
 }
 

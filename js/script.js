@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  // if (!Modernizr.cssanimations) {
+  if (!Modernizr.cssanimations) {
     $('.work_content_container').css({
       bottom: -400,
       display: 'block'
@@ -18,5 +18,7 @@ $(document).ready(function() {
       bottom: -350,
       opacity: 1
     }, 1000);
-  // }
+  }
+
+  console.log(window.location);
 });
