@@ -19,6 +19,4 @@ $(document).ready(function() {
       opacity: 1
     }, 1000);
   }
-
-  console.log(window.location);
 });
