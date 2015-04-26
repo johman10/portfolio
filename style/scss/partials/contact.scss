@@ -9,12 +9,12 @@
     height: 50px;
     width: 50px;
     background-size: 100% 100%;
-    opacity: .6;
+    opacity: .25;
     display: inline-block;
     margin: 0 20px;
 
     &:hover {
-      opacity: 1;
+      opacity: .6;
     }
   }
 

@@ -1,9 +1,19 @@
 $(document).ready(function() {
+  $('body').css('display', 'none');
+  $('body').fadeIn(300);
+
+  $('a:not(.contact_icon)').click(function() {
+    event.preventDefault();
+    newLocation = this.href;
+    $('body').fadeOut(300, window.location = newLocation);
+  });
+
   if (!Modernizr.cssanimations) {
     $('.work_content_container').css({
       bottom: -400,
       display: 'block'
     });
+
     $( ".home_header" ).delay( 1500 ).animate({
       left: '50%',
       top: '20%'
