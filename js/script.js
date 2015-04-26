@@ -2,10 +2,9 @@ $(document).ready(function() {
   $('body').css('display', 'none');
   $('body').fadeIn(300);
 
-  $('a:not(.contact_icon)').click(function() {
+  $('a:not(.contact_icon)').click(function(event) {
     event.preventDefault();
-    newLocation = this.href;
-    $('body').fadeOut(300, window.location = newLocation);
+    $('body').fadeOut(300, window.location = this.href);
   });
 
   if (!Modernizr.cssanimations) {
