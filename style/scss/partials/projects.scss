@@ -1,3 +1,7 @@
+.project_body {
+  overflow-x: hidden;
+}
+
 .project_background {
   width: 100vw;
   height: 100vh;
@@ -10,18 +14,55 @@
 
 .project_description {
   position: absolute;
-  right: 0;
+  right: -400px;
   top: 0;
   height: 100vh;
   width: 400px;
-  padding: 20px;
   overflow-y: scroll;
   background-color: rgba(0, 0, 0, .6);
   color: $white;
+  padding: 20px;
+
+  .cssanimations & {
+    @include animation("expandDescription" 1s ease .5s forwards);
+  }
+
+  @include keyframes("expandDescription") {
+    100% {
+      right: 0;
+    }
+  }
 
   h1 {
     text-align: center;
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 500;
   }
+
+  p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  a {
+    color: $white;
+    background-color: $background-color;
+    text-decoration: none;
+    transition: background-color .3s ease, color .3s ease, border-color .3 ease;
+    padding-left: 3px;
+    border-bottom: solid 2px tranparant;
+
+    &:hover {
+      color: $background-color;
+      background-color: $white;
+      border-bottom: solid 2px $background-color;
+    }
+  }
+}
+
+.project_link_container {
+  position: fixed;
+  bottom: 0;
 }
