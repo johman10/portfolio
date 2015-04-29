@@ -1,10 +1,12 @@
 $(document).ready(function() {
   $('body').css('display', 'none');
-  $('body').fadeIn(500);
+  $('body').fadeIn(330);
 
   $('a:not(.contact_icon)').click(function(event) {
     event.preventDefault();
-    $('body').fadeOut(500, window.location = this.href);
+    $('body').fadeOut(330, function() {
+      window.location = event.currentTarget.href;
+    });
   });
 
   if (!Modernizr.cssanimations) {

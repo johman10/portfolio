@@ -10,6 +10,10 @@
   &.justab_background {
     background-image: image-url('justab/screen.png')
   }
+
+  &.connect_background {
+    background-image: image-url('connect/screen.png')
+  }
 }
 
 .project_description {
@@ -21,7 +25,10 @@
   overflow-y: scroll;
   background-color: rgba(0, 0, 0, .6);
   color: $white;
-  padding: 20px;
+
+  .project_description_content {
+    margin: 20px;
+  }
 
   .cssanimations & {
     @include animation("expandDescription" 1s ease .5s forwards);
@@ -50,14 +57,12 @@
     color: $white;
     background-color: $background-color;
     text-decoration: none;
-    transition: background-color .3s ease, color .3s ease, border-color .3 ease;
+    transition: background-color .3s ease, color .3s ease;
     padding-left: 3px;
-    border-bottom: solid 2px tranparant;
 
     &:hover {
       color: $background-color;
       background-color: $white;
-      border-bottom: solid 2px $background-color;
     }
   }
 }
@@ -65,4 +70,35 @@
 .project_link_container {
   position: fixed;
   bottom: 0;
+  width: 400px;
+
+  .project_home_link {
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+  }
+
+  .project_prev_link {
+    float: left;
+  }
+
+  .project_next_link {
+    float: right;
+  }
+
+  .project_prev_link,
+  .project_next_link {
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    width: 50%;
+    height: 40px;
+
+    &.inactive {
+      background-color: $background-color;
+      color: $background-color;
+    }
+  }
 }
