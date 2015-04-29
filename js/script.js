@@ -2,7 +2,7 @@ $(document).ready(function() {
   $('body').css('display', 'none');
   $('body').fadeIn(330);
 
-  $('a:not(.contact_icon)').click(function(event) {
+  $('a:not(.contact_icon, [target="_blank"])').click(function(event) {
     event.preventDefault();
     $('body').fadeOut(330, function() {
       window.location = event.currentTarget.href;
