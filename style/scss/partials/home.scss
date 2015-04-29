@@ -2,7 +2,7 @@
   @include centre("b");
   position: fixed;
   width: 500px;
-  height: 260px;
+  height: 280px;
 
   .home_header {
     @include centre("b");
@@ -29,6 +29,7 @@
     text-align: justify;
     margin: 165px 0 0 8px;
     opacity: 0;
+    line-height: 1.2;
 
     .cssanimations & {
       @include animation("showParagraph" .5s ease 2.5s forwards);
