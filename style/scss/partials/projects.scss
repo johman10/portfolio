@@ -14,6 +14,10 @@
   &.connect_background {
     background-image: image-url('connect/screen.png')
   }
+
+  &.serve_background {
+    background-image: image-url('serve/screen.png')
+  }
 }
 
 .project_description {
