@@ -9,15 +9,22 @@
 
   .cssanimations & {
     @include animation("workReplace" 1s ease 2.5s forwards);
+
+    &.end {
+      animation: none;
+      height: auto;
+      bottom: -480px;
+      opacity: 1;
+    }
   }
 
   @include keyframes("workReplace") {
     0% {
-      bottom: -492px;
+      bottom: -530px;
     }
     100% {
       height: auto;
-      bottom: -442px;
+      bottom: -480px;
       opacity: 1;
     }
   }

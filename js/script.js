@@ -1,5 +1,13 @@
 $(document).ready(function() {
   $('body').css('display', 'none');
+
+  if (sessionStorage.animationDone) {
+    $('.animation').addClass('end');
+  }
+  else {
+    sessionStorage.setItem('animationDone', true);
+  }
+
   $('body').fadeIn(330);
 
   $('a:not([target="_blank"])').click(function(event) {
@@ -19,10 +27,11 @@ $(document).ready(function() {
     }
   });
 
+  // Still needs a fix for non-animation situation
   if (!Modernizr.cssanimations) {
     autoHeight = $('.content_container').css('height', 'auto').height();
     $('.content_container').css({
-      bottom: -492
+      bottom: -530
     });
 
     $( ".home_header" ).delay( 1500 ).animate({
@@ -36,7 +45,7 @@ $(document).ready(function() {
 
     $('.content_container').delay(2500).animate({
       height: autoHeight,
-      bottom: -442,
+      bottom: -480,
       opacity: 1
     }, 1000);
 
