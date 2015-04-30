@@ -6,6 +6,7 @@
   width: 100vw;
   height: 100vh;
   background-size: cover;
+  background-position: 50% 0;
 
   &.justab_background {
     background-image: image-url('justab/screen.png')
@@ -35,16 +36,32 @@
   color: $white;
 
   .project_description_content {
-    margin: 20px;
+    margin: 20px 20px 100px;
   }
 
   .cssanimations & {
-    @include animation("expandDescription" 1s ease .5s forwards);
+    @include animation("expandDescription" .5s ease .5s forwards);
   }
 
   @include keyframes("expandDescription") {
+    0% {
+      right: -400px;
+    }
     100% {
       right: 0;
+    }
+  }
+
+  .cssanimations &.reverse {
+    @include animation("collapseDescription" .5s ease forwards);
+  }
+
+  @include keyframes("collapseDescription") {
+    0% {
+      right: 0;
+    }
+    100% {
+      right: -400px;
     }
   }
 
