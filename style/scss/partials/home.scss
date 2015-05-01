@@ -12,12 +12,12 @@
 
     .cssanimations & {
       @include animation("headerPlace" 1s ease 1.5s forwards);
+    }
 
-      &.end {
-        animation: none;
-        left: 50%;
-        top: 20%;
-      }
+    &.end {
+      animation: none;
+      left: 50%;
+      top: 20%;
     }
 
     @include keyframes("headerPlace") {
@@ -39,10 +39,10 @@
 
     .cssanimations & {
       @include animation("showParagraph" .5s ease 2.5s forwards);
+    }
 
-      &.end {
-        opacity: 1;
-      }
+    &.end {
+      opacity: 1;
     }
 
     @include keyframes("showParagraph") {

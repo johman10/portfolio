@@ -9,13 +9,13 @@
 
   .cssanimations & {
     @include animation("workReplace" 1s ease 2.5s forwards);
+  }
 
-    &.end {
-      animation: none;
-      height: auto;
-      bottom: -480px;
-      opacity: 1;
-    }
+  &.end {
+    animation: none;
+    height: auto;
+    bottom: -480px;
+    opacity: 1;
   }
 
   @include keyframes("workReplace") {
@@ -123,13 +123,13 @@
   .content_container {
     .cssanimations & {
       @include animation("workReplace" 1s ease 2.5s forwards);
+    }
 
-      &.end {
-        animation: none;
-        height: auto;
-        bottom: -1080px;
-        opacity: 1;
-      }
+    &.end {
+      animation: none;
+      height: auto;
+      bottom: -1080px;
+      opacity: 1;
     }
 
     @include keyframes("workReplace") {
