@@ -44,3 +44,8 @@
   }
 }
 
+@media screen and ($width-name : $landscape-width) {
+  .contact_container {
+    width: 100%;
+  }
+}
