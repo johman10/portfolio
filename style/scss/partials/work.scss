@@ -119,23 +119,30 @@
   }
 }
 
-@media screen and ($width-name : $tablet-width) {
-  .content_container {
-    .work_container {
-      width: 750px;
-      margin: 0 auto;
-    }
-
-    .work_last_row {
-      position: relative;
-      width: 500px;
-      margin: 0 auto;
-    }
-  }
-}
-
 @media screen and ($width-name : $landscape-width) {
   .content_container {
+    .cssanimations & {
+      @include animation("workReplace" 1s ease 2.5s forwards);
+
+      &.end {
+        animation: none;
+        height: auto;
+        bottom: -1080px;
+        opacity: 1;
+      }
+    }
+
+    @include keyframes("workReplace") {
+      0% {
+        bottom: -1130px;
+      }
+      100% {
+        height: auto;
+        bottom: -1080px;
+        opacity: 1;
+      }
+    }
+
     .work_container {
       width: 479px;
     }
