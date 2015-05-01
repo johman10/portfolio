@@ -27,13 +27,7 @@ $(document).ready(function() {
     }
   });
 
-  // Still needs a fix for non-animation situation
   if (!Modernizr.cssanimations) {
-    autoHeight = $('.content_container').css('height', 'auto').height();
-    $('.content_container').css({
-      bottom: -530
-    });
-
     $( ".home_header" ).delay( 1500 ).animate({
       left: '50%',
       top: '20%'
@@ -43,11 +37,30 @@ $(document).ready(function() {
       opacity: 1
     }, 500);
 
-    $('.content_container').delay(2500).animate({
-      height: autoHeight,
-      bottom: -480,
-      opacity: 1
-    }, 1000);
+    autoHeight = $('.content_container').css('height', 'auto').height();
+
+    if ($(window).width() > 767) {
+      $('.content_container').css({
+        bottom: -530
+      });
+
+      $('.content_container').delay(2500).animate({
+        height: autoHeight,
+        bottom: -480,
+        opacity: 1
+      }, 1000);
+    }
+    else {
+      $('.content_container').css({
+        bottom: -1130
+      });
+
+      $('.content_container').delay(2500).animate({
+        height: autoHeight,
+        bottom: -1080,
+        opacity: 1
+      }, 1000);
+    }
 
     $('.project_description').delay(500).animate({
       right: 0
