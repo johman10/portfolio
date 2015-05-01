@@ -131,3 +131,34 @@
     }
   }
 }
+
+@media screen and ($width-name : $landscape-width) {
+  .project_description {
+    top: initial;
+    right: 0;
+    bottom: 100px;
+    height: auto;
+    width: 100%;
+    background-color: $white;
+    color: $black;
+    transform: translateY(100%);
+
+    .project_description_content {
+      margin: 20px;
+    }
+
+    .cssanimations & {
+      animation: none;
+    }
+
+    .cssanimations &.reverse {
+      animation: none;
+    }
+  }
+
+  .project_link_container {
+    position: relative;
+    bottom: auto;
+    width: auto;
+  }
+}
