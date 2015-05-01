@@ -133,6 +133,9 @@
 }
 
 @media screen and ($width-name : $landscape-width) {
+  .project_background {
+    position: fixed;
+  }
   .project_description {
     top: initial;
     right: 0;

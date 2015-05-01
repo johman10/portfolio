@@ -2,7 +2,7 @@
   @include centre("b");
   position: fixed;
   width: 500px;
-  height: 280px;
+  height: 300px;
 
   .home_header {
     @include centre("b");
@@ -53,26 +53,16 @@
   }
 }
 
-@media screen and ($width-name : $tablet-width) {
+@media screen and ($width-name : $landscape-width) {
   .home_container {
+    height: 320px;
+
     .home_header {
       font-size: 150px;
     }
 
     .home_paragraph {
-      margin: 135px 0 0 8px;
-    }
-  }
-}
-
-@media screen and ($width-name : $landscape-width) {
-  .home_container {
-    .home_header {
-      font-size: 100px;
-    }
-
-    .home_paragraph {
-      margin: 120px 0 0 8px;
+      margin: 150px 0 0 8px;
     }
   }
 }
@@ -81,13 +71,8 @@
   .home_container {
     width: 100%;
 
-    .home_header {
-      font-size: 80px;
-    }
-
     .home_paragraph {
       text-align: center;
-      margin: 105px 0 0;
       padding: 0 20px;
     }
   }
