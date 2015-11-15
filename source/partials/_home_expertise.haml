@@ -1,0 +1,15 @@
+.expertise
+  %h2
+    = I18n.t('home.expertise.head')
+  = simple_format(I18n.t('home.expertise.intro'))
+  - data.expertise.expertise.each_with_index do |item, index|
+    .expertise--item
+      .expertise--item-icon
+        = image_tag(item.icon_url)
+      .expertise--item-text
+        %p
+          - item.skills.each do |skill|
+            = skill + (' / ' if skill != item.skills.last).to_s
+
+  = partial('partials/splitter_button', locals: { button_label: I18n.t('home.expertise.more'), button_url: data.expertise.expertise_url })
+.clear-both

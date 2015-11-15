@@ -1,0 +1,27 @@
+projects_url: '/projects'
+projects:
+  -
+    title: 'JusTab'
+    internal_url: '/projects/justab'
+    image_path: 'work/justab/screen.png'
+    favorite: true
+    # TODO: Find this URL
+    url: ''
+    year: '2015'
+    cms: false
+  -
+    title: 'Serve'
+    internal_url: '/projects/serve'
+    image_path: 'work/serve/screen.png'
+    favorite: false
+    url: 'http://www.serve72.nl'
+    year: '2015'
+    cms: 'MODX'
+  -
+    title: 'Shelter Ministries'
+    internal_url: '/projects/shelter_ministries'
+    image_path: 'work/shelter/screen.png'
+    favorite: false
+    url: 'http://www.shelter-minstries.org'
+    year: '2014'
+    cms: 'MODX'

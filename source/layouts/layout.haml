@@ -1,0 +1,12 @@
+!!!
+%html
+  %head
+    %title
+      = ("Portfolio Johan van Eck " + current_page.data.title.to_s).strip
+    / = stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Dosis:400,700|Martel:400,700'
+    = stylesheet_link_tag 'main'
+  %body
+    = partial 'partials/menu'
+    = yield
+
+    = javascript_include_tag 'all'

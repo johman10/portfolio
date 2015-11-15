@@ -1,0 +1,22 @@
+-
+  title: Home
+  path: '/home'
+-
+  title: Projects
+  path: '/projects'
+  sub_menu:
+    -
+      title: Serve
+      path: '/projects/serve'
+    -
+      title: Shelter
+      path: '/projects/shelter_ministries'
+    -
+      title: Justab
+      path: '/projects/justab'
+-
+  title: About me
+  path: 'about_me'
+-
+  title: Contact
+  path: 'contact'
