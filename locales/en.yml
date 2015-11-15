@@ -1,0 +1,32 @@
+---
+en:
+  menu:
+    logo:
+      after: "Johan van Eck"
+  header:
+    head: "Hi"
+    content: |
+      My name's <strong>Johan van Eck</strong>.
+      I'm a title="front-end & back-end developer"
+
+      Currently, I'm working @ <strong>Mangrove</strong>, feel free to
+      <span class='accent'>contact me</span> or take a look at some of <span class='accent'>my work</span>
+  home:
+    projects:
+      head: "My projects"
+      intro: "Here are some of the projects I've worked on. I'm proud of all of them but everybody has it's favorite"
+      more: "More projects"
+
+    expertise:
+      head: 'Expertise'
+      intro: |
+        My skills are focused on developement. This is where my interests. Below you’ll find a list of my skills and the tools I’m familiar with. For a complete biography and curriculum vitae visit my about me page.
+      more: 'About me'
+
+    footer:
+      head: 'Drop me a line'
+      content: |
+        Let's talk and see what we can create
+      button:
+        label: 'Contact me'
+

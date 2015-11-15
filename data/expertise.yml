@@ -1,0 +1,18 @@
+expertise_url: '/about_me'
+expertise:
+  -
+    icon_url: 'icons/code.svg'
+    skills:
+      - HTML4
+      - HTML5
+      - CSS
+      - Javascript
+      - JQuery
+      - Ruby on Rails
+  -
+    icon_url: 'icons/wrench.svg'
+    skills:
+      - MS Word
+      - MS Excel
+      - Adobde illlustrator
+      - Adobe Indesign
