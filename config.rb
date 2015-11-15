@@ -1,9 +1,9 @@
 activate :deploy do |deploy|
-  deploy.method   = :ftp
-  deploy.host            = '185.13.226.250'
-  deploy.path            = '/domains/pxdesign.nl/public_html/portfolio'
-  deploy.user            = 'johanuc112'
-  deploy.password        = 'K@@p@rtj@1'
+  deploy.method = :ftp
+  deploy.host = '185.13.226.250'
+  deploy.path = '/domains/pxdesign.nl/public_html/portfolio'
+  deploy.user = 'johanuc112'
+  deploy.password = ENV['PASSWORD']
 end
 
 ###
