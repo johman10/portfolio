@@ -1,4 +1,8 @@
-.splitter-button
-  %hr/
-  = link_to locals[:button_label], locals[:button_url], class: 'btn btn--red'
-  %hr/
+.container
+  .twelve.columns.splitter-button
+    .five.columns
+      %hr/
+    .two.columns
+      = link_to locals[:button_label], locals[:button_url], class: 'btn btn--red'
+    .five.columns
+      %hr/

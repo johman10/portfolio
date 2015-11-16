@@ -6,6 +6,17 @@ activate :deploy do |deploy|
   deploy.password = ENV['PASSWORD']
 end
 
+helpers do
+  def haml_tag_if(condition, *tag)
+    if condition
+      haml_tag(*tag){ yield }
+    else
+      yield
+    end
+    ErrorReturn.new("haml_tag_if")
+  end
+end
+
 ###
 # Compass
 ###

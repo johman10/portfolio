@@ -1,7 +1,6 @@
-.header
-  .header--content
-    %h1.js-intro-header
-      = I18n.t('header.head')
-    = simple_format I18n.t(:'header.content').html_safe
-
-.clear-both
+.header.u-full-width
+  .container.row
+    .twelve.columns.header--content
+      %h1.js-intro-header
+        = I18n.t('header.head')
+      = simple_format I18n.t(:'header.content').html_safe

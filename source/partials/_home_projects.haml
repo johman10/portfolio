@@ -1,16 +1,18 @@
 .projects
-  .projects--intro
-    %h2
-      = I18n.t('home.projects.head')
-    = simple_format I18n.t('home.projects.intro').html_safe
-  - data.work.projects.each do |project|
-    = link_to project.internal_url do
-      / TODO: Do something to make this more random to look nice
-      .project
-        - if project.favorite
-          .project--favorite
-            = image_tag 'icons/star.svg'
-        = image_tag project.image_path, class: 'project--image'
-  .clear-both
-  = partial('partials/splitter_button', locals: { button_label: I18n.t('home.projects.more'), button_url: data.work.projects_url })
-.clear-both
+  .container.row
+    .twelve.columns.projects--intro
+      %h2
+        = I18n.t('home.projects.head')
+      = simple_format I18n.t('home.projects.intro').html_safe
+  .container.row
+    - data.work.projects.each_with_index do |project, index|
+      - haml_tag_if index.even? && index != 0, '.row' do
+        .columns{ class: project.columns }
+          = link_to project.internal_url do
+            .project
+              - if project.favorite
+                .project--favorite
+                  = image_tag 'icons/star.svg'
+              = image_tag project.image_path, class: 'project--image'
+
+= partial('partials/splitter_button', locals: { button_label: I18n.t('home.projects.more'), button_url: data.work.projects_url })
