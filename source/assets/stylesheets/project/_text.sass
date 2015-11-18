@@ -4,7 +4,7 @@ h1
 
 h2
   color: $accent-color-2
-  font-size: 1.3em
+  font-size: 1.75em
 
 h3
   font-size: 2em
@@ -20,6 +20,14 @@ p
 
 .accent
   color: $accent-color-1
+  text-decoration: none
+  padding-bottom: 50px
+  border-bottom: solid 1px transparent
+  transition: border .4s ease-in-out, padding .4s ease-in-out
+
+  &:hover
+    border-bottom-color: $accent-color-1
+    padding-bottom: 0
 
 .btn
   height: 50px

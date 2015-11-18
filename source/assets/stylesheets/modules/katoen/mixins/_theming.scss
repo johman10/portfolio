@@ -1,0 +1,95 @@
+@mixin theming {
+	@each $color, $hex in $themes {
+		$theme-color: () !global;
+		@for $i from 1 through length($hex) {
+			$theme-color: map-merge(($i: nth($hex, $i)), $theme-color) !global;
+		}
+		&.theme-#{$color} {
+			@content
+		}
+	}
+}
+
+////////////////////////////////////////////////////////////
+//
+// This is the second theming version, expecting a theming variable
+// containing primary, secondary, tertiary etc. colors, and needing
+// the component to determine what property gets which color, so a
+// reverse from the old one.
+//
+////////////////////////////////////////////////////////////
+// @mixin theming($_properties, $_themes: $themes) {
+// 	@each $theme_name, $colors in $_themes {
+// 		&.theme-#{$theme-name} {
+// 			@each $level,$properties in $_properties {
+// 				@each $prop in $properties {
+// 					#{$prop}: map-get($colors, $level);
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+////////////////////////////////////////////////////////////
+//
+// This is the first theming version, using a themes variable to
+// set the most common properties.
+//
+////////////////////////////////////////////////////////////
+
+//This is more as an example than anything else
+//You'll probably want to override this
+// $themes: (
+// 	"theme-blue": (
+// 		color: blue,
+// 		background: yellow,
+
+// 		":hover": (
+// 			color: yellow,
+// 			background: blue
+// 		),
+
+// 		".is-error": (
+// 			color: red,
+// 			background: orange
+// 		)
+// 	)
+// ) !default;
+
+// @mixin theming($_themes...) {
+// 	//Check to see if (theme-)map is passed, if so, bump the arglist
+// 	@if length($_themes) == 1 and type_of(nth($_themes, 1)) == 'map' {
+// 		$_themes: nth($_themes, 1);
+// 	}
+// 	//Check to see if arguments are passed, else pick the default $themes
+// 	@if length($_themes) > 0 {
+// 		$tMap: ();	
+// 		@each $theme-name in $_themes {
+// 			@if type_of($theme-name) == 'string' {
+// 				$theme: ($theme-name: map-get($themes, $theme-name));
+// 				//Merge the values from the themes map with the temporary map
+// 				$tMap: map-merge($theme, $tMap);
+// 			}
+// 		}
+// 		$_themes: if(length($tMap) > 1, $tMap, $_themes);
+// 	} @else {
+// 		//No override? Do ALL the themes!
+// 		$_themes: $themes;
+// 	}
+// 	//Loop through the theme-map
+// 	@each $theme-name, $properties in $_themes {
+// 		&.#{$theme-name},
+// 		.#{$theme-name} & {
+// 			@each $property, $value in $properties {
+// 				@if type_of($value) == 'map' {
+// 					&#{$property} {
+// 						@each $property, $value in $value {
+// 							#{$property}: #{$value};
+// 						}
+// 					}
+// 				} @else {
+// 					#{$property}: #{$value};
+// 				}
+// 			}
+// 		}
+// 	}
+// }

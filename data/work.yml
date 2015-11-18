@@ -9,7 +9,7 @@ projects:
     url: ''
     year: '2015'
     cms: false
-    columns: 'six'
+    columns: 'md-6'
   -
     title: 'Serve'
     internal_url: '/projects/serve'
@@ -18,7 +18,7 @@ projects:
     url: 'http://www.serve72.nl'
     year: '2015'
     cms: 'MODX'
-    columns: 'six'
+    columns: 'md-4'
   -
     title: 'Shelter Ministries'
     internal_url: '/projects/shelter_ministries'
@@ -27,4 +27,4 @@ projects:
     url: 'http://www.shelter-minstries.org'
     year: '2014'
     cms: 'MODX'
-    columns: 'six'
+    columns: 'md-4'

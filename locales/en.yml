@@ -10,7 +10,7 @@ en:
       I'm a title="front-end & back-end developer"
 
       Currently, I'm working @ <strong>Mangrove</strong>, feel free to
-      <span class='accent'>contact me</span> or take a look at some of <span class='accent'>my work</span>
+      <a href='/contact' class='accent'>contact me</a> or take a look at some of <a href='/projects' class='accent'>my work</a>
   home:
     projects:
       head: "My projects"

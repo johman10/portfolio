@@ -2,6 +2,7 @@ $header-height: 400px
 
 .header
   height: $header-height
+  // TODO: Mght be a nice place for a gradient
   background-color: $base-color-1
   color: $white
   font-size: 1.5em
@@ -9,3 +10,9 @@ $header-height: 400px
   &--content
     margin: ($header-height/2) 0 0
     transform: translateY(-50%)
+
+  @include bp('md-')
+    &--content
+      margin: 20px 0 0
+      transform: none
+

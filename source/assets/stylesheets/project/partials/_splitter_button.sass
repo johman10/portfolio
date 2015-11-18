@@ -1,9 +1,17 @@
 .splitter-button
-  margin-top: 50px
+  // margin-top: 50px
 
   hr
-    margin-top: 25px
     border: solid 1px $accent-color-2
 
-  a
-    float: left
+  // a
+  //   float: left
+
+  @include bp('md+')
+    hr
+      margin-top: 25px
+
+  @include bp('md-')
+    .btn
+      margin: 1.25rem 0
+

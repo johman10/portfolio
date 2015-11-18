@@ -6,18 +6,29 @@
   &--logo
     background-image: image-url('logo.svg')
     height: 100px
-    background-size: cover
-    background-position: 50%
+    background-size: contain
+    background-position: 50% 0
     background-repeat: no-repeat
-    margin-top: 20px
 
   &--logo-text
     border-left: solid 1px $white
-    margin-top: 20px
+    margin: 0 0 0 10px
     padding-left: 5px
+    color: $white
+
+  &--mobile
+    height: 40px
+    background-image: image-url('icons/menu.svg')
+    background-size: 40px
+    background-repeat: no-repeat
+    background-position: 50% 0
+    position: absolute
+    right: 0
+    cursor: pointer
 
   &--list-item
-    line-height: 70px
+    a
+      transition: color .4s ease-in-out
 
     &:hover a
       color: $black
@@ -25,20 +36,18 @@
     &.has-subs
       position: relative
 
-      &:after
-        content: ''
-        background-image: image-url('icons/triangle-arrow-down.svg')
-        position: absolute
-        height: 100%
-        width: 15px
-        margin-left: 5px
-        top: 0
-        background-repeat: no-repeat
-        background-position: 50%
-
       &:hover .menu--sub-list
         overflow: hidden
         height: 200px
+
+      &:after
+        content: ''
+        background-image: image-url('icons/triangle-arrow-down.svg')
+        width: 15px
+        background-repeat: no-repeat
+        background-position: 50%
+        display: inline-block
+        height: 15px
 
     a
       text-decoration: none
@@ -50,3 +59,12 @@
     height: 0
     transition: height .3s
     overflow: hidden
+
+  @include bp('md-')
+    &--logo-text
+      text-align: center
+      border-left: none
+
+    &--list-item
+      text-align: center
+
