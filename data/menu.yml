@@ -1,22 +1,32 @@
--
-  title: Home
-  path: '/home'
--
-  title: Projects
-  path: '/projects'
-  sub_menu:
-    -
-      title: Serve
-      path: '/projects/serve'
-    -
-      title: Shelter
-      path: '/projects/shelter_ministries'
-    -
-      title: Justab
-      path: '/projects/justab'
--
-  title: About me
-  path: 'about_me'
--
-  title: Contact
-  path: 'contact'
+en:
+  - title: Home
+    path: '/en/home'
+  - title: Projects
+    path: '/en/projects'
+    sub_menu:
+      - title: Serve
+        path: '/en/projects/serve'
+      - title: Shelter
+        path: '/en/projects/shelter-ministries'
+      - title: JusTab
+        path: '/en/projects/justab'
+  - title: About me
+    path: '/en/about-me'
+  - title: Contact
+    path: '/en/contact'
+nl:
+  - title: Home
+    path: '/nl/home'
+  - title: Projects
+    path: '/nl/projecten'
+    sub_menu:
+      - title: Serve
+        path: '/nl/projecten/serve'
+      - title: Shelter
+        path: '/nl/projecten/shelter-ministries'
+      - title: JusTab
+        path: '/nl/projecten/justab'
+  - title: Over mij
+    path: '/nl/over-mij'
+  - title: Contact
+    path: '/nl/contact'

@@ -1,19 +1,42 @@
-expertise_url: '/about_me'
-expertise:
-  -
-    icon_name: 'code'
-    skills:
-      - HTML4
-      - HTML5
-      - CSS
-      - Javascript
-      - JQuery
-      - Ruby on Rails
-  -
-    icon_name: 'wrench'
-    skills:
-      - MS Word
-      - MS Excel
-      - Adobde illlustrator
-      - Adobe Indesign
-      - Sketch
+en:
+  expertise_url: '/en/about-me'
+  expertise:
+    -
+      icon_name: 'code'
+      skills:
+        - HTML4
+        - HTML5
+        - CSS
+        - Javascript
+        - JQuery
+        - Ruby on Rails
+    -
+      icon_name: 'wrench'
+      skills:
+        - MS Word
+        - MS Excel
+        - Adobde illlustrator
+        - Adobe Indesign
+        - Sketch
+
+
+nl:
+  expertise_url: '/nl/over-mij'
+  expertise:
+    -
+      icon_name: 'code'
+      skills:
+        - HTML4
+        - HTML5
+        - CSS
+        - Javascript
+        - JQuery
+        - Ruby on Rails
+    -
+      icon_name: 'wrench'
+      skills:
+        - MS Word
+        - MS Excel
+        - Adobde illlustrator
+        - Adobe Indesign
+        - Sketch

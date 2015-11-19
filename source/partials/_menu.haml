@@ -11,7 +11,7 @@
           .menu--logo-text.md-4
             = I18n.t('menu.logo.after')
       %ul.menu--list.lg-6.md-8.right
-        - data.menu.each do |item|
+        - data.menu.send(I18n.locale).each do |item|
           - if item.sub_menu
             %li.menu--list-item.has-subs.md-pt-1.xs-3.xs-pt-2.text-right
               = link_to item.title, item.path

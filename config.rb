@@ -47,7 +47,7 @@ end
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
-activate :i18n, templates_dir: 'locales'
+activate :i18n
 
 ###
 # Helpers
@@ -55,7 +55,7 @@ activate :i18n, templates_dir: 'locales'
 
 set :haml, ugly: true, format: :html5
 
-set :relative_links, true
+# set :relative_links, true
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes

@@ -1,15 +1,16 @@
-.expertise
-  .container
-    .row.twelve.columns
+.expertise.xs-mt-2.xs-mb-1
+  .container.row
+    .md-9.center
       %h2
         = I18n.t('home.expertise.head')
       = simple_format(I18n.t('home.expertise.intro'))
-  - data.expertise.expertise.each_with_index do |item, index|
-    .expertise--item.row
-      .expertise--item-icon.one.columns.offset-by-three{ class: item.icon_name }
-      .expertise--item-text.five.columns
-        %p
-          - item.skills.each do |skill|
-            = skill + (' / ' if skill != item.skills.last).to_s
+  - data.expertise.send(I18n.locale).expertise.each_with_index do |item, index|
+    .expertise--item.md-9.lg-5.center
+      .row
+        .expertise--item-icon.md-2{ class: item.icon_name }
+        .expertise--item-text.md-10
+          %p
+            - item.skills.each do |skill|
+              = skill + (' / ' if skill != item.skills.last).to_s
 
-= partial('partials/splitter_button', locals: { button_label: I18n.t('home.expertise.more'), button_url: data.expertise.expertise_url })
+= partial('partials/splitter_button', locals: { button_label: I18n.t('home.expertise.more'), button_url: data.expertise.send(I18n.locale).expertise_url })

@@ -1,11 +1,11 @@
-.projects.text-center.xs-pt-2
+.projects.text-center.xs-mt-2
   .container.row
-    .projects--intro.lg-12.xs-pb-1
+    .projects--intro.lg-12.xs-mb-1
       %h2
         = I18n.t('home.projects.head')
       = simple_format I18n.t('home.projects.intro').html_safe
   .container.row
-    - data.work.projects.each_with_index do |project, index|
+    - data.work.send(I18n.locale).projects.each_with_index do |project, index|
       / TODO: Improve this setup to be more dynamic, flexbox in combination with current setup?
       %div{ class: project.columns }
         = link_to project.internal_url do
@@ -15,4 +15,4 @@
                 = image_tag 'icons/star.svg'
             = image_tag project.image_path, class: 'project--image'
 
-= partial('partials/splitter_button', locals: { button_label: I18n.t('home.projects.more'), button_url: data.work.projects_url })
+= partial('partials/splitter_button', locals: { button_label: I18n.t('home.projects.more'), button_url: data.work.send(I18n.locale).projects_url })
