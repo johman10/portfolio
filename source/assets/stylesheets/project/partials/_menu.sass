@@ -36,9 +36,20 @@
     &.has-subs
       position: relative
 
-      &:hover .menu--sub-list
-        overflow: hidden
-        height: 200px
+      &:hover
+        border:
+          top: solid 1px $black
+          left: solid 1px $black
+          right: solid 1px $black
+
+        .menu--sub-list
+          overflow: hidden
+          height: 200px
+          display: block
+          border:
+            bottom: solid 1px $black
+            left: solid 1px $black
+            right: solid 1px $black
 
       &:after
         content: ''
@@ -54,11 +65,14 @@
       color: $white
 
   &--sub-list
-    display: block
+    display: none
     position: absolute
     height: 0
     transition: height .3s
     overflow: hidden
+
+    &-item:hover a
+      color: $white
 
   @include bp('md-')
     &--logo-text

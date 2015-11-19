@@ -15,8 +15,8 @@
           - if item.sub_menu
             %li.menu--list-item.has-subs.md-pt-1.xs-3.xs-pt-2.text-right
               = link_to item.title, item.path
-              %ul.menu--sub-list.xs-m-1
+              %ul.menu--sub-list.row.xs-p-1.xs-12
                 - item.sub_menu.each do |project|
-                  %li.menu--sub-list-item= link_to project.title, project.path
+                  %li.menu--sub-list-item.xs-mb-1= link_to project.title, project.path
           - else
             %li.menu--list-item.md-pt-1.xs-3.xs-pt-2.text-right= link_to item.title, item.path

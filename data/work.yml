@@ -1,8 +1,8 @@
 en:
-  projects_url: 'en/projects'
+  projects_url: '/en/projects'
   projects:
     - title: 'JusTab'
-      internal_url: 'en/projects/justab'
+      internal_url: '/en/projects/justab'
       image_path: 'work/justab/screen.png'
       favorite: true
       # TODO: Find this URL
@@ -11,7 +11,7 @@ en:
       cms: false
       columns: 'md-6'
     - title: 'Serve'
-      internal_url: 'en/projects/serve'
+      internal_url: '/en/projects/serve'
       image_path: 'work/serve/screen.png'
       favorite: false
       url: 'http://www.serve72.nl'
@@ -19,7 +19,7 @@ en:
       cms: 'MODX'
       columns: 'md-4'
     - title: 'Shelter Ministries'
-      internal_url: 'en/projects/shelter_ministries'
+      internal_url: '/en/projects/shelter_ministries'
       image_path: 'work/shelter/screen.png'
       favorite: false
       url: 'http://www.shelter-minstries.org'
