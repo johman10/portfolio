@@ -6,6 +6,9 @@ gem 'middleman', '~>3.4.0'
 
 gem 'middleman-deploy', '~> 1.0'
 
+# TODO: Turn this thing back on + config toggle
+# gem 'middleman-autoprefixer'
+
 # Live-reloading plugin
 gem 'middleman-livereload', '~> 3.1.0'
 
