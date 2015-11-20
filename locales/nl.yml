@@ -21,13 +21,13 @@ nl:
     expertise:
       head: 'Expertise'
       intro: |
-        Mijn expertize ligt bij development. Dit is dan ook waar mijn interesse ligt. Hieronder vind je een lijst met de tools en skills waar ik bekend mee ben. Voor een meer compleet overzicht bekijk de over mij pagina.
-      more: 'About me'
+        Mijn expertise ligt bij development. Dit is dan ook waar mijn interesse ligt. Hieronder vind je een lijst met de tools en skills waar ik bekend mee ben. Voor een meer compleet overzicht bekijk de over mij pagina.
+      more: 'Over mij'
 
     footer:
-      head: 'Drop me a line'
+      head: 'Stuur mij een berichtje'
       content: |
-        Let's talk and see what we can create
+        Laten we het hebben over wat ik voor jou kan maken
       button:
-        label: 'Contact me'
+        label: 'Contact'
 
