@@ -17,7 +17,7 @@ en:
 nl:
   - title: Home
     path: '/nl/home'
-  - title: Projects
+  - title: Projecten
     path: '/nl/projecten'
     sub_menu:
       - title: Serve

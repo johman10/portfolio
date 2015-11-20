@@ -16,16 +16,6 @@
     padding-left: 5px
     color: $white
 
-  &--mobile
-    height: 40px
-    background-image: image-url('icons/menu.svg')
-    background-size: 40px
-    background-repeat: no-repeat
-    background-position: 50% 0
-    position: absolute
-    right: 0
-    cursor: pointer
-
   &--list-item
     a
       transition: color .4s ease-in-out
@@ -36,20 +26,10 @@
     &.has-subs
       position: relative
 
-      &:hover
-        border:
-          top: solid 1px $black
-          left: solid 1px $black
-          right: solid 1px $black
-
-        .menu--sub-list
-          overflow: hidden
-          height: 200px
-          display: block
-          border:
-            bottom: solid 1px $black
-            left: solid 1px $black
-            right: solid 1px $black
+      &:hover .menu--sub-list
+        overflow: hidden
+        height: 200px
+        display: block
 
       &:after
         content: ''
