@@ -4,6 +4,5 @@ $(document).ready(function() {
     $('html, body').animate({
       scrollTop: position
     }, 300);
-    // $(document).scrollTop(position);
   });
 });

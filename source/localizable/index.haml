@@ -1,3 +1,6 @@
+- other_language = ['en', 'nl'] - [I18n.locale.to_s]
+= link_to other_language, request.path, locale: other_language.first.to_sym
+
 = partial 'partials/header'
 
 = partial 'partials/home_projects'

@@ -9,7 +9,7 @@ en:
       url: ''
       year: '2015'
       cms: false
-      columns: 'md-6'
+      columns: 'md-8'
     - title: 'Serve'
       internal_url: '/en/projects/serve'
       image_path: 'work/serve/screen.png'
@@ -38,7 +38,7 @@ nl:
       url: ''
       year: '2015'
       cms: false
-      columns: 'md-6'
+      columns: 'md-8'
     - title: 'Serve'
       internal_url: '/nl/projecten/serve'
       image_path: 'work/serve/screen.png'
