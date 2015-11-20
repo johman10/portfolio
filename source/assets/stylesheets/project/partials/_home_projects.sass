@@ -1,16 +1,28 @@
 .projects
   position: relative
 
-  &:before
-    content: ''
-    position: absolute
-    top: 0
-    right: 0
-    height: 15px
-    width: 15px
-    background-color: $accent-color-1
-    background-image: image-url('icons/arrow-down.svg')
-    background-size: 100%
+  .arrow-down-wrapper
+    cursor: pointer
+
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      height: 0
+      width: 0
+      border-top: solid 80px $accent-color-1
+      border-left: solid 80px transparent
+
+    &:after
+      content: ''
+      position: absolute
+      right: 5px
+      top: 7px
+      background-image: image-url('icons/arrow-down.svg')
+      background-size: 100%
+      width: 35px
+      height: 35px
 
 .project
   position: relative
